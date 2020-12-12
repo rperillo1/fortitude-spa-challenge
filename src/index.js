@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RepoProvider } from "./contexts/RepoContext"
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <RepoProvider>
     <App />
+    </RepoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
